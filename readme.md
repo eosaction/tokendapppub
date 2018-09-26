@@ -5,7 +5,7 @@
 
 ### Usage (buy,sell,transfer,publish)
 
-Visit https://dapp.pub and buy `100.0000 PUB`, publish your DApp token by yourself. And then, you can buy/sell and transfer your token on the website.
+Visit https://dapp.pub and buy `100.0000 ACT`, publish your DApp token by yourself. And then, you can buy/sell and transfer your token on the website.
 
 ### Consume Example
 
@@ -86,7 +86,7 @@ extern "C" {
 
 [![tokenpocket](https://raw.githubusercontent.com/Dappub/logo/master/partners/tpdex-small.png)](https://tpdex.io/#/)
 
-[![tokendapppub](https://github.com/Dappub/logo/blob/master/logo.png)](https://dapp.pub/tokens/?token=PUB)
+[![tokendapppub](https://github.com/Dappub/logo/blob/master/logo.png)](https://dapp.pub/tokens/?token=ACT)
 
 ![bitportal](https://raw.githubusercontent.com/Dappub/logo/master/partners/bitportal.png)
 

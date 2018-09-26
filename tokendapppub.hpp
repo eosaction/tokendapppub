@@ -15,11 +15,11 @@ using namespace std;
 
 #define SN(X) (string_to_symbol(0, #X) >> 8)
 
-const account_name BANK_RESERVES = N(bankreserves);
-const account_name GOD_ACCOUNT = N(godofdapppub);
-const symbol_name PUB_SYMBOL_NAME = SN(PUB);
-const symbol_type PUB_SYMBOL = S(4, PUB);
-const asset NEW_GAME_CONSOME = asset(1000000, PUB_SYMBOL);
+const account_name BANK_RESERVES = N(bank4dappact);
+const account_name GOD_ACCOUNT = N(godofdappact);
+const symbol_name ACT_SYMBOL_NAME = SN(ACT);
+const symbol_type ACT_SYMBOL = S(4, ACT);
+const asset NEW_GAME_CONSOME = asset(1000000, ACT_SYMBOL);
 const uint32_t MAX_PERIOD = 100ul * 365 * 24 * 60 * 60;
 
 class tokendapppub: public contract {
@@ -406,7 +406,8 @@ private:
     };
     typedef multi_index<N(accounts), account> accounts;
 };
-
+/*
 #ifdef ABIGEN
     EOSIO_ABI(tokendapppub, (settrans)(setreferfee)(detail)(issue)(create)(reg)(receipt)(transfer)(sell)(consume)(destroy)(claim)(newtoken)(hellodapppub))
 #endif
+*/

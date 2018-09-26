@@ -19,9 +19,9 @@ using mvo = fc::mutable_variant_object;
 #define SN(X) (string_to_symbol(0, #X) >> 8)
 
 const account_name GOD_ACCOUNT = N(godofdapppub);
-const symbol_name PUB_SYMBOL_NAME = SN(PUB);
-const symbol_type PUB_SYMBOL = S(4, PUB);
-const asset NEW_GAME_CONSOME = asset(1000000, PUB_SYMBOL);
+const symbol_name ACT_SYMBOL_NAME = SN(ACT);
+const symbol_type ACT_SYMBOL = S(4, ACT);
+const asset NEW_GAME_CONSOME = asset(1000000, ACT_SYMBOL);
 
 class tokendapppub_test : public eosio_system::eosio_system_tester {
 	public:
@@ -88,7 +88,7 @@ BOOST_AUTO_TEST_SUITE(tokendapppub_tests)
 		const asset large_asset = core_from_string("80.0000");
 		create_account_with_resources( N(godofdapppub), config::system_account_name, core_from_string("10.0000"), false, large_asset, large_asset );
 		produce_blocks();
-        BOOST_REQUIRE_EQUAL(success(), hellodapppub(core_from_string("10000.0000"), asset(100000000, PUB_SYMBOL), asset(0, PUB_SYMBOL), 0, 0, 0));
+        BOOST_REQUIRE_EQUAL(success(), hellodapppub(core_from_string("10000.0000"), asset(100000000, ACT_SYMBOL), asset(0, ACT_SYMBOL), 0, 0, 0));
         produce_blocks();
     } FC_LOG_AND_RETHROW()
 
